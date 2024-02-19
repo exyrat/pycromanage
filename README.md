@@ -5,8 +5,7 @@ Setting up uManager configuration:
 
 **Camera**
 
-For our Andor EMCCD, follow: Andor
-Important: Install Andor driver pack into uManager installation folder
+Most commercial cameras have uManager adapters which are well documented on the uManager site. Create an instance of your camera after moving the correct files into the uManager installation folder.
 
 **Shutters**
 
