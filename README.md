@@ -1,7 +1,22 @@
 # pycromanage
 Microscope control through pycromanager: https://pycro-manager.readthedocs.io/en/latest/index.html 
 
-Setting up uManager configuration:
+So far I have been doing this through anaconda and jupyter notebook. Create a conda env (eg pycromanage) and then follow the installation instructions: 
+
+    Install pycro-manager: pip install pycromanager
+
+    Download newest version of micro-manager 2.0
+
+    Open Micro-Manager, select tools-options, and check the box that says Run server on port 4827 (you only need to do this once)
+
+Install jupyter notebook, and probably numpy and any other convenient things, then your good to go. Start a jupyter notebook and test the connection to uManager:
+
+    from pycromanager import Core
+
+    core = Core()
+    print(core)
+
+# Setting up uManager configuration:
 
 **Camera**
 
