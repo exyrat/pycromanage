@@ -16,7 +16,7 @@ Install jupyter notebook, and probably numpy and any other convenient things, th
     core = Core()
     print(core)
 
-The 'core' object allows interfacing more or less directly with the micromanager API (here). For example, to get the current autofocus device and check its offset:
+The 'core' object allows interfacing more or less directly with the micromanager API ([here](https://valelab4.ucsf.edu/~MM/doc-2.0.0-gamma/mmcorej/mmcorej/CMMCore.html)). For example, to get the current autofocus device and check its offset:
 
     afd = core.get_auto_focus_device()
     print(core.get_auto_focus_offset())
