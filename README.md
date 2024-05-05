@@ -16,6 +16,11 @@ Install jupyter notebook, and probably numpy and any other convenient things, th
     core = Core()
     print(core)
 
+The 'core' object allows interfacing more or less directly with the micromanager API (here). For example, to get the current autofocus device and check its offset:
+
+    afd = core.get_auto_focus_device()
+    print(core.get_auto_focus_offset())
+
 # Setting up uManager configuration:
 
 **Camera**
