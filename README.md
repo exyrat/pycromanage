@@ -22,7 +22,7 @@ The 'core' object allows interfacing more or less directly with the micromanager
     print(core.get_auto_focus_offset())
 
 # Creating an Acquisition
-The core functionality of pycromanager lies in the Acquisition class, which . I'll give a brief overview of how to use it but the pycromanager docs have more detail of course.
+The core functionality of pycromanager lies in the Acquisition class, which essentially prepares a hardware sequence for micromanager to carry out (i.e., the acquisition you want to take). I'll give a brief overview of how to use it but the pycromanager docs have more detail of course.
 
 To acquire data (once your config etc. is set up):
 
