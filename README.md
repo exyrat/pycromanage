@@ -40,3 +40,7 @@ We use the PI E-727. This is controlled through the PI_GCS_2 adapter.
 First, move the proper dll ( PI_GCS2_DLL_x64.dll ) into the uManager installation folder.
 Create an instance of the PI_GCSController_DLL. For the inputs, choose a proper name (e.g., E-727). The interface parameter is the SN# found in PIMikroMove and the interface type is USB (for our case).
 Then, create an instance of the desired stage. E.g. for Z control, create a PIZStage. Select the controller (E-727) and choose axis 3. The process is similar for a PIXYStage (but axes 1 and 2).
+
+**XY Coarse Stage**
+
+We use the PI C-867. This is controlled through the PI_GCS_2 adapter as well and needs to be set up in the same was as the E-727. Then, create an instance of PIXYStage with the C-867 as the controller. _Note: I have had issues sometimes with having the E-727 and C-867 simultaneously connected, especially when trying to have two XY Stages - if possible, I recommend only having one PIXYStage instance in a uManager config_ 
