@@ -21,6 +21,21 @@ The 'core' object allows interfacing more or less directly with the micromanager
     afd = core.get_auto_focus_device()
     print(core.get_auto_focus_offset())
 
+# Creating an Acquisition
+The core functionality of pycromanager lies in the Acquisition class, which . I'll give a brief overview of how to use it but the pycromanager docs have more detail of course.
+
+To acquire data (once your config etc. is set up):
+
+    from pycromanager import Acquisition
+    
+    with Acquisition(directory='some_path', name='some_name') as acq:
+        events = some_event_list
+    acq.acquire(events)
+where some_event_list is a list [] of dictionaries describing each event. For example, an event could be:
+    event = {
+        'axes': {'time': 0, 'z': 3, 'channel': 'DAPI'}
+    }
+which would acquire an image at t=0, z=3, in the DAPI channel. pycromanager has the multi_d_acquisition_events() function to create event lists for common acquisitions, but often it is useful to create your own for more specialized acquisitions. There are a couple of examples
 # Setting up uManager configuration:
 
 **Camera**
