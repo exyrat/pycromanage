@@ -32,10 +32,11 @@ To acquire data (once your config etc. is set up):
         events = some_event_list
     acq.acquire(events)
 where some_event_list is a list [] of dictionaries describing each event. For example, an event could be:
+
     event = {
         'axes': {'time': 0, 'z': 3, 'channel': 'DAPI'}
     }
-which would acquire an image at t=0, z=3, in the DAPI channel. pycromanager has the multi_d_acquisition_events() function to create event lists for common acquisitions, but often it is useful to create your own for more specialized acquisitions. There are a couple of examples
+which would acquire an image at t=0, z=3, in the DAPI channel. pycromanager has the multi_d_acquisition_events() function to create event lists for common acquisitions, but often it is useful to create your own for more specialized acquisitions. There are a couple of examples in the "Specialized Acquisitions" folder, and much more detail in the pycromanager docs.
 # Setting up uManager configuration:
 
 **Camera**
